@@ -174,88 +174,63 @@ export const constantRouterMap = [
         meta: { title: '新增宠物' },
         hidden:true
       },
-      // {
-      //   path: 'edit/:id',   
-      //   name: 'EduTeacherEdit',
-      //   component: () => import('@/views/edu/teacher/save'),
-      //   meta: { title: '编辑讲师', noCache: true },
-      //   hidden: true
-      // }
+
     ]
   },
-
-
-
   {
-    path: '/form',
+    path: '/deviceInfo',
     component: Layout,
+    redirect: '/deviceInfo/device',
+    name: '资产信息管理',
+    meta: { title: '资产信息管理', icon: 'example' },
     children: [
       {
-        path: 'index',
-        name: 'Form',
-        component: () => import('@/views/form/index'),
-        meta: { title: 'Form', icon: 'form' }
-      }
-    ]
-  },
-
-  {
-    path: '/nested',
-    component: Layout,
-    redirect: '/nested/menu1',
-    name: 'Nested',
-    meta: {
-      title: 'Nested',
-      icon: 'nested'
-    },
-    children: [
-      {
-        path: 'menu1',
-        component: () => import('@/views/nested/menu1/index'), // Parent router-view
-        name: 'Menu1',
-        meta: { title: 'Menu1' },
-        children: [
-          {
-            path: 'menu1-1',
-            component: () => import('@/views/nested/menu1/menu1-1'),
-            name: 'Menu1-1',
-            meta: { title: 'Menu1-1' }
-          },
-          {
-            path: 'menu1-2',
-            component: () => import('@/views/nested/menu1/menu1-2'),
-            name: 'Menu1-2',
-            meta: { title: 'Menu1-2' },
-            children: [
-              {
-                path: 'menu1-2-1',
-                component: () => import('@/views/nested/menu1/menu1-2/menu1-2-1'),
-                name: 'Menu1-2-1',
-                meta: { title: 'Menu1-2-1' }
-              },
-              {
-                path: 'menu1-2-2',
-                component: () => import('@/views/nested/menu1/menu1-2/menu1-2-2'),
-                name: 'Menu1-2-2',
-                meta: { title: 'Menu1-2-2' }
-              }
-            ]
-          },
-          {
-            path: 'menu1-3',
-            component: () => import('@/views/nested/menu1/menu1-3'),
-            name: 'Menu1-3',
-            meta: { title: 'Menu1-3' }
-          }
-        ]
+        path: 'device/list',
+        name: '资产设备列表',
+        component: () => import('@/views/community/deviceInfo/list'),
+        meta: { title: '资产设备列表' }
       },
       {
-        path: 'menu2',
-        component: () => import('@/views/nested/menu2/index'),
-        meta: { title: 'menu2' }
+        path: 'device/add',
+        name: '添加资产',
+        component: () => import('@/views/community/deviceInfo/add'),
+        meta: { title: '添加资产' },
+        hidden:true
       }
+
     ]
   },
+  {
+    path: '/expenseInfo',
+    component: Layout,
+    redirect: '/expenseInfo/expense',
+    name: '收费管理',
+    meta: { title: '收费信息管理', icon: 'example' },
+    children: [
+      {
+        path: 'expenseProject/list',
+        name: '收费项目',
+        component: () => import('@/views/community/expenseInfo/expenseProject/list'),
+        meta: { title: '收费项目' }
+      },
+      {
+        path: 'expenses/list',
+        name: '收费详情',
+        component: () => import('@/views/community/expenseInfo/expense/list'),
+        meta: { title: '收费详情' }
+      },
+      {
+        path: 'expenses/add',
+        name: '添加收费详情',
+        component: () => import('@/views/community/expenseInfo/expense/add'),
+        meta: { title: '添加收费详情' },
+        hidden:true
+      }
+
+    ]
+  },
+
+
 
   {
     path: 'external-link',
