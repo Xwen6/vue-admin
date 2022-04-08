@@ -42,7 +42,7 @@ export const constantRouterMap = [
     component: Layout,
     redirect: '/community',
     name: '社区管理',
-    meta: { title: '社区信息管理', icon: 'example' },
+    meta: { title: '社区信息管理', icon: 'user' },
     children: [
       {
         path: 'community/list',
@@ -225,8 +225,37 @@ export const constantRouterMap = [
         component: () => import('@/views/community/expenseInfo/expense/add'),
         meta: { title: '添加收费详情' },
         hidden:true
-      }
+      },
+    
 
+    ]
+  },
+
+  {
+    path: '/system',
+    component: Layout,
+    redirect: '/system',
+    name: '系统管理',
+    meta: { title: '系统管理', icon: 'example' },
+    children: [
+      {
+        path: 'system/role/list',
+        name: '角色管理',
+        component: () => import('@/views/community/system/role/list'),
+        meta: { title: '角色管理' }
+      },
+      {
+        path: 'system/resource/list',
+        name: '菜单管理',
+        component: () => import('@/views/community/system/resource/list'),
+        meta: { title: '菜单管理' }
+      },
+      {
+        path: 'system/roleResource/list',
+        name: '权限分配',
+        component: () => import('@/views/community/system/roleResource/list'),
+        meta: { title: '权限分配' }
+      }
     ]
   },
 

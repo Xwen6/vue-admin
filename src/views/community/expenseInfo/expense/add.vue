@@ -69,6 +69,7 @@
 import house from "@/api/community/house.js"
 import ImageCropper from '@/components/ImageCropper'
 import expense from "@/api/community/expense.js"
+import project from "@/api/community/expenseProject.js"
 
 export default {
    components: { ImageCropper },

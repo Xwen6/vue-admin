@@ -46,7 +46,9 @@ export default{
             url: `/communityService/community/getCommunityList`,
             method:"get"
         })
-    }
+    },
+
+
   
     
 

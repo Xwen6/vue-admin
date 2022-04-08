@@ -14,14 +14,18 @@
     "svgo": "svgo -f src/icons/svg --config=src/icons/svgo.yml"
   },
   "dependencies": {
+    "all": "^0.0.0",
     "axios": "^0.25.0",
-    "element-ui": "2.4.6",
+    "element-ui": "^2.15.6",
     "js-cookie": "2.2.0",
     "normalize.css": "7.0.0",
     "nprogress": "0.2.0",
-    "vue": "2.5.17",
+    "vue": "^2.6.10",
     "vue-router": "3.0.1",
-    "vuex": "3.0.1"
+    "vue-template-compiler": "^2.6.10",
+    "vuex": "^3.6.2",
+    "vxe-table": "3.2.4",
+    "xe-utils": "3.1.11"
   },
   "devDependencies": {
     "autoprefixer": "8.5.0",
@@ -47,7 +51,7 @@
     "html-webpack-plugin": "4.0.0-alpha",
     "mini-css-extract-plugin": "0.4.1",
     "node-notifier": "5.2.1",
-    "node-sass": "^4.7.2",
+    "node-sass": "^4.14.1",
     "optimize-css-assets-webpack-plugin": "5.0.0",
     "ora": "3.0.0",
     "path-to-regexp": "2.4.0",
@@ -56,7 +60,7 @@
     "postcss-loader": "2.1.6",
     "postcss-url": "7.3.2",
     "rimraf": "2.6.2",
-    "sass-loader": "7.0.3",
+    "sass-loader": "^7.3.1",
     "script-ext-html-webpack-plugin": "2.0.1",
     "semver": "5.5.0",
     "shelljs": "^0.8.5",
@@ -66,7 +70,7 @@
     "url-loader": "1.0.1",
     "vue-loader": "15.3.0",
     "vue-style-loader": "4.1.2",
-    "vue-template-compiler": "2.5.17",
+    "vue-template-compiler": "^2.6.10",
     "webpack": "4.16.5",
     "webpack-bundle-analyzer": "2.13.1",
     "webpack-cli": "3.1.0",

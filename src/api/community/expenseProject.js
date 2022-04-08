@@ -46,6 +46,12 @@ export default{
             url: `/communityService/community/getCommunityList`,
             method:"get"
         })
+    },
+    getProjectList(){
+        return request({
+            url: `/communityService/expensesProject/getList`,
+            method:"get"
+        })
     }
   
     

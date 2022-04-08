@@ -234,7 +234,7 @@ export default {
 
                   durableYears: [
                   { required: true, message: '请输入设备预计使用年限', trigger: 'blur' },
-                  { min: 1, max: 3, message: '长度在1-2个字符', trigger: 'blur' }
+                  { min: 1, max: 2, message: '长度在1-2个字符', trigger: 'blur' }
                 ],
         
                 
@@ -351,14 +351,14 @@ export default {
           this.getList() 
           this.updateBtn = false
               
-          alert('submit!');
+            alert('submit!');
           } else {
             console.log('error submit!!');
             return false;
           }
         });
          this.getList() 
-      },
+        },
         
 
     

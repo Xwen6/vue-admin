@@ -12,11 +12,21 @@ import App from './App'
 import router from './router'
 import store from './store'
 
-import '@/icons' // icon
-import '@/permission' // permission control
+ import '@/icons' // icon
+ import '@/permission' // permission control
+
+// import 'xe-utils'
+// import VXETable from 'vxe-table'
+// import 'vxe-table/lib/index.css'
+
+// createApp(App).use(VXETable).mount('#app')
+
+import 'xe-utils'
+import VXETable from 'vxe-table'
+import 'vxe-table/lib/style.css'
 
 Vue.use(ElementUI, { locale })
-
+Vue.use(VXETable)
 
 Vue.config.productionTip = false
 
